@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="شوكولاتة بلجيكية صنعة بكل حب بي ايدي ليبية">
+    <title>Nazo Chocolate</title>
+    
+    <!-- إضافة أيقونة الموقع -->
+    <link rel="icon" href="android-chrome-192x192.png" type="image/png">
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png">
+    
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* التنسيقات العامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+    
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+            padding: 20px;
+        }
+    
+        /* الهيدر */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #6b4423;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+    
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #f8d7a3;
+        }
+    
+        header p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+    
+        /* معرض المنتجات */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 20px;
+            justify-content: center;
+        }
+    
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #6b4423;
+            border-radius: 20px;
+            width: 250px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+    
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+    
+        .product-image {
+            width: 100%;
+            border-bottom: 2px solid #6b4423;
+            height: 200px;
+        }
+    
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .product-info {
+            padding: 20px;
+            text-align: center;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .product-info h3 {
+            color: #6b4423;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    
+        .product-info p {
+            color: #000000;
+            font-size: 0.9rem;
+        }
+        
+        /* قسم التواصل */
+        .contact-section {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #6b4423;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .contact-links a:hover {
+            background-color: #8a5a2f;
+            transform: translateY(-3px);
+        }
+        
+        .contact-links i {
+            margin-left: 8px;
+            font-size: 1.2rem;
+        }
+    
+        /* فوتر */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #6b4423;
+            margin-top: 50px;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        footer p {
+            color: #eec27c;
+        }
+    
+        /* التكيف مع الشاشات الصغيرة */
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, 250px);
+            }
+        }
+    
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .products {
+                grid-template-columns: 250px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>Nazo Chocolate</h1>
+            <p>لأجود أنواع الشوكولاته الفاخرة</p>
+        </header>
+        
+        <!-- قسم التواصل الجديد -->
+        <div class="contact-section">
+            <h2>تواصل معنا</h2>
+            <div class="contact-links">
+                <a href="tel:+218942037583">
+                    <i class="fas fa-phone"></i> +218 94 203 7583
+                </a>
+                <a href="https://www.facebook.com/share/19X1dvoD6h/" target="_blank">
+                    <i class="fab fa-facebook"></i> صفحتنا على الفيسبوك
+                </a>
+                <a href="https://wa.me/218942037583" target="_blank">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+            </div>
+        </div>
+        
+        <div class="products">
+            <!-- المنتج 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="849f9c07-2aa6-4463-8c36-b2bff871f413.jpg" alt="شوكولاتة بنبوني">
+                </div>
+                <div class="product-info">
+                    <h3>شوكولاتة بنبوني</h3>
+                    <p>شوكولاتة غامقة بنسبة 85% كاكاو، مصنوعة من أفضل حبوب الكاكاو.</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="20377613-d6c0-48f9-b770-da37c1019ffb.jpeg" alt="علبة هدايا فاخرة">
+                </div>
+                <div class="product-info">
+                    <h3>علبة هدايا فاخرة</h3>
+                    <p>تصميم حصري يحتوي على تشكيلة من أفضل منتجاتنا.</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="2a6d1875-0265-4db0-b175-0684453d8e97.jpg" alt="مربعات الشوكولاتة">
+                </div>
+                <div class="product-info">
+                    <h3>مربعات الشوكولاتة</h3>
+                    <p>خليط من النكهات المميزة بتصميم أنيق.</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="bed0bd11-1bc3-4088-863d-f407cc5d1c31.jpeg" alt="حلوى الشوكولاتة">
+                </div>
+                <div class="product-info">
+                    <h3>حلوى الشوكولاتة</h3>
+                    <p>لمسة نهائية من الفن، مصنوعة يدوياً بأفضل المكونات.</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="571b2dc9-0257-4a44-8cfb-a5cd7ee59c40.jpeg" alt="قطعه من الجنه">
+                </div>
+                <div class="product-info">
+                    <h3>قطعه من الجنه</h3>
+                    <p>افضل انواع الشوكولاتة البلجيكية</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="7dc5e989-4f04-4666-bdd4-17cc77f61f46.jpeg" alt="طعم الخيال">
+                </div>
+                <div class="product-info">
+                    <h3>طعم الخيال</h3>
+                    <p>لمسة جميلة من عالم الخيال.</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="767017dd-8a02-4107-b07b-7af2b5e3a7dc.jpeg" alt="كل ما هو لذيذ">
+                </div>
+                <div class="product-info">
+                    <h3>كل ما هو لذيذ</h3>
+                    <p>نكهات تأخدك الي السعاده</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="fd963fd6-a99f-479f-a85c-35e07186afae.jpg" alt="صنعة بكل حب">
+                </div>
+                <div class="product-info">
+                    <h3>صنعة بكل حب</h3>
+                    <p>شوكولاتة مصنوعة بأيدي خبراء بكل حب وإتقان</p>
+                </div>
+            </div>
+            
+            <!-- المنتج 9 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="9013713e-2067-42fc-be40-0319820a2a46.jpeg" alt="وصف الصورة الجديدة">
+                </div>
+                <div class="product-info">
+                    <h3>امعكم في لحضاتكم السعيدة</h3>
+                    <p>كل ما يخص الشوكولاته موجود لدينا</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Nazo Chocolate. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+</body>
+</html>
